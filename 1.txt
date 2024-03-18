@@ -1,0 +1,13 @@
+You are given an array of integers nums and an integer target. 
+Your task is to find two distinct indices i and j such that the sum of nums[i] and nums[j] is equal to the target. 
+You can assume that each input will have exactly one solution, and you may not use the same element twice.
+
+lst = [1, 2, 4, 6, 3]
+
+target = 7
+
+for i in range (len(lst)):
+    for j in range(i+1, len(lst)):
+        if lst[i] + lst[j] == target:
+            print(f"indices are {[i, j]}")
+            print(f"numbers are {[lst[i], lst[j]]}")  
